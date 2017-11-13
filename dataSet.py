@@ -23,6 +23,3 @@ for e in rawData.split():
     listedData.append(e)
 
 dataTable = reshape_list(listedData, newColNum=7, newRowNum=21)
-
-for e in dataTable:
-    print(e)
