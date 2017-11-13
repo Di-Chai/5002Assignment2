@@ -1,0 +1,52 @@
+digraph Tree {
+node [shape=box];
+0 [label="High=6\nMedium=9\nLow=5"]
+1 [label="Course=Network\nHigh=2\nMedium=2\nLow=2"]
+0 -> 1;
+2 [label="Course=Database\nHigh=2\nMedium=0\nLow=3"]
+0 -> 2;
+3 [label="Course=Programming\nHigh=1\nMedium=4\nLow=0"]
+0 -> 3;
+4 [label="Course=Algorithm\nHigh=1\nMedium=3\nLow=0"]
+0 -> 4;
+5 [label="ClassSize=40\nHigh=0\nMedium=0\nLow=1"]
+1 -> 5;
+6 [label="ClassSize=20\nHigh=1\nMedium=1\nLow=0"]
+1 -> 6;
+7 [label="ClassSize=30\nHigh=1\nMedium=0\nLow=1"]
+1 -> 7;
+8 [label="ClassSize=50\nHigh=0\nMedium=1\nLow=0"]
+1 -> 8;
+9 [label="ClassSize=20\nHigh=1\nMedium=0\nLow=0"]
+2 -> 9;
+10 [label="ClassSize=10\nHigh=0\nMedium=0\nLow=2"]
+2 -> 10;
+11 [label="ClassSize=50\nHigh=1\nMedium=0\nLow=1"]
+2 -> 11;
+12 [label="ClassSize=40\nHigh=0\nMedium=1\nLow=0"]
+3 -> 12;
+13 [label="ClassSize=20\nHigh=0\nMedium=3\nLow=0"]
+3 -> 13;
+14 [label="ClassSize=30\nHigh=1\nMedium=0\nLow=0"]
+3 -> 14;
+15 [label="ClassSize=40\nHigh=0\nMedium=1\nLow=0"]
+4 -> 15;
+16 [label="ClassSize=50\nHigh=1\nMedium=0\nLow=0"]
+4 -> 16;
+17 [label="ClassSize=10\nHigh=0\nMedium=1\nLow=0"]
+4 -> 17;
+18 [label="ClassSize=30\nHigh=0\nMedium=1\nLow=0"]
+4 -> 18;
+19 [label="Language=English\nHigh=1\nMedium=0\nLow=0"]
+6 -> 19;
+20 [label="Language=non-English\nHigh=0\nMedium=1\nLow=0"]
+6 -> 20;
+21 [label="Language=English\nHigh=0\nMedium=0\nLow=1"]
+7 -> 21;
+22 [label="Language=non-English\nHigh=1\nMedium=0\nLow=0"]
+7 -> 22;
+23 [label="Language=English\nHigh=1\nMedium=0\nLow=0"]
+11 -> 23;
+24 [label="Language=non-English\nHigh=0\nMedium=0\nLow=1"]
+11 -> 24;
+}
