@@ -1,6 +1,8 @@
 # 5002Assignment2
 Question 2 is about building a decision using ID3 and C4.5.
+
 The source data of this assignment is:
+
 ['#', 'Language', 'Instructor', 'Course', 'Semester', 'ClassSize', 'Score']
 ['1', 'English', 'Alex', 'Network', '1', '20', 'High']
 ['2', 'non-English', 'David', 'Database', '2', '20', 'High']
