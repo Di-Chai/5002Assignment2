@@ -1,4 +1,3 @@
-from sklearn import tree
 import numpy as np
 import math
 from dataSet import dataTable
