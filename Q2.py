@@ -1,3 +1,4 @@
+from sklearn import tree
 import numpy as np
 import math
 from dataSet import dataTable
@@ -12,7 +13,7 @@ global nodeID
 nodeID = 0
 
 mode = 'ID3'  # 'ID3'
-# mode = 'C45'  # 'C4.5'
+mode = 'C45'  # 'C4.5'
 
 # (node, childList)
 # each node -> (nodeID, [h, m, l])
@@ -95,7 +96,11 @@ def split_once(data):
         if mode == 'ID3':
             infoGain = parentEntropy - entropy
         if mode == 'C45':
-            infoGain = (parentEntropy - entropy) / get_entropy([e[1] for e in attrCount.items()])
+            tmpEntropy = get_entropy([e[1] for e in attrCount.items()])
+            if tmpEntropy == 0:
+                infoGain = 0
+            else:
+                infoGain = (parentEntropy - entropy) / get_entropy([e[1] for e in attrCount.items()])
         attrEntropy.append((infoGain, attrCount, attrTarget))
     # value, position
     maxInfoGain = [-1, -1]
